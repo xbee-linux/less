@@ -12,7 +12,8 @@ description: |
   lesskey: Used to specify the key bindings for less
 
 var:
-  version: 608
+  xbee:
+    version: 608
 
 provision:
   url: https://www.greenwoodsoftware.com/less/less-{{ .version }}.tar.gz
