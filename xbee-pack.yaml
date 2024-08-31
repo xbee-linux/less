@@ -16,7 +16,7 @@ var:
     version: 608
 
 provision:
-  url: https://www.greenwoodsoftware.com/less/less-{{ .version }}.tar.gz
+  url: https://www.greenwoodsoftware.com/less/less-{{ .xbee.version }}.tar.gz
 
 build:
   - shell:
@@ -24,6 +24,6 @@ build:
         - ./configure --prefix=/usr --sysconfdir=/etc
         - make
         - make install DESTDIR={{ .xbee.out }}
-      directory: "{{ .xbee.src }}/less-{{ .version }}"
+      directory: "{{ .xbee.src }}/less-{{ .xbee.version }}"
 
 
